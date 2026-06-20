@@ -22,7 +22,6 @@ header{
     display: flex;
     flex-direction: row-reverse;
     justify-content: start;
-    margin-left: 3rem;
 }
 .Gastro{
     display: flex;
