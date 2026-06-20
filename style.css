@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+.Oglo{
+    height: 300px;
+}
+body{
+  background-color: #F2F0EA;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+header{
+    background-color: #A5856F;
+}
+.Logo{
+    font-family: 'Montserrat',sans-serif;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    margin-left: 3rem;
+}
+.Gastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1,h2,h3{
+    font-family: 'Montserrat', sans-serif;
+}
+.burger {
+  display: block;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 14px;
+  left: 20px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navlinks {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  background: #A5856F;
+  padding: 12px;
+}
+.navlinks a {
+  color: blue;
+  text-decoration: none;
+  font-weight: 600;
+}
+.navlinks.open {
+  display: flex;
+}
+.hero {
+  text-align: center;
+  padding: 56px 20px;
+  background: #A0D4E0;
+}
+.hero h1 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+}
+#menu h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+#menu h2::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 60%;
+  background: #A5856F;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+.plat {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.plat > div {
+  background: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.plat img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.prix {
+  font-weight: 700;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+footer {
+  background: #A5856F;
+  text-align: center;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .burger { display: none; }
+  .navlinks {
+    display: flex !important;
+    flex-direction: row;
+    gap: 20px;
+    background: transparent;
+  }
+  .plat {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .plat {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
