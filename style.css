@@ -1,13 +1,16 @@
 * {
   margin: 0;
-  padding: 0;
+  padding: 0.3rem ;
   box-sizing: border-box;
 }
 html {
   font-size: 100%;
 }
 .Oglo{
-    height: 300px;
+    height: 200px;
+}
+main{
+  padding: 0px;
 }
 body{
   background-color: #F2F0EA;
@@ -16,6 +19,17 @@ body{
 }
 header{
     background-color: #A5856F;
+}
+nav{
+  background: #A0D4E0;
+}
+.vide{
+  background: #F2F0EA;
+  padding: 2px;
+}
+.vide1{
+  background: #F2F0EA;
+  padding: 2px;
 }
 .Logo{
     font-family: 'Montserrat',sans-serif;
@@ -48,19 +62,26 @@ ul {
   padding: 0;
 }
 .navlinks {
-  display: none;
+ position: fixed;
+  top: 0;
+  left: -100%;          
+  width: 70%;             
+  height: 100%;
+  background: #F2F0EA;     
+  display: flex;
   flex-direction: column;
-  gap: 12px;
-  background: #A5856F;
-  padding: 12px;
+  gap: 20px;
+  padding: 40px 20px;
+  transition: left 0.3s ease; 
+  z-index: 1000;
 }
 .navlinks a {
-  color: blue;
+  color: #333;
   text-decoration: none;
   font-weight: 600;
 }
 .navlinks.open {
-  display: flex;
+   left: 0; 
 }
 .hero {
   text-align: center;
@@ -95,7 +116,7 @@ ul {
 }
 
 .plat > div {
-  background: #fff;
+  background:#A5856F;
   padding: 12px;
   border-radius: 10px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.06);
@@ -111,11 +132,49 @@ ul {
 .prix {
   font-weight: 700;
 }
-form{
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
+#apropos{
+  background: #A5856F;
 }
+.vide2{
+  background: #F2F0EA;
+  padding: 2px;
+}
+#contacts{
+  padding: 0px;
+}
+.cont{
+  background: #A5856F;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;             
+  max-width: 600px;       
+  margin: 0;         
+}
+
+
+form input, form textarea {
+  width: 100%;            
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;     
+  font-size: 1rem;
+}
+
+
+form button {
+  width: 25%;             
+  padding: 10px;
+  background: #A5856F;    
+  color: white;
+  border: none;
+  border-radius: 8px;    
+  cursor: pointer;
+  font-weight: bold;
+  align-self: flex-start; 
+}
+
 footer {
   background: #A5856F;
   text-align: center;
@@ -124,10 +183,15 @@ footer {
 @media (min-width: 768px) {
   .burger { display: none; }
   .navlinks {
+    position: static;      
+    left: auto;             
+    width: auto;           
+    height: auto;           
     display: flex !important;
     flex-direction: row;
     gap: 20px;
     background: transparent;
+    padding: 0;            
   }
   .plat {
     grid-template-columns: repeat(2, 1fr);
