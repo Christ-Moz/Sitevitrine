@@ -55,6 +55,7 @@ h1,h2,h3{
   position: absolute;
   top: 14px;
   left: 20px;
+  z-index: 1100;
 }
 ul {
   list-style: none;
