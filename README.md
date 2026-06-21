@@ -1,4 +1,4 @@
-# Mon Premier Projet : *Site Vitrine La Gastro*
+# Mon Premier Projet : *Site vitrine La Gastro*
 Ceci est le projet frontend de mon site vitrine nommée **La Gastro**.
 
 ## Démo en ligne 
