@@ -145,6 +145,13 @@ ul {
 .cont{
   background: #A5856F;
 }
+.trait{
+   border-bottom: 2px solid #A5856F;
+  display: inline-block;            
+  padding-bottom: 2px;
+}
+
+
 form {
   display: flex;
   flex-direction: column;
